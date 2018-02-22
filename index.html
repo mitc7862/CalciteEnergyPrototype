@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-rc.8/css/calcite-web.min.css">
+    <link type="text/css" rel="stylesheet" href="CE_prototype.css" />
+    <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+</head>
+
+<body class="font-size--3">
+    <!-- Add prototype html here-->
+    <h1 id="openPanel">CacliteEnergy</h1>
+    <div id="wrapper">
+        <div id="mainPanel">
+            <header>
+                <button id="panelClose" class="icon-ui-close icon-ui-gray"><span>close</span></button>
+                <h2 class="font-size-0">Panel header</h2>
+            </header>
+            <article>
+                <p>Bacon ipsum dolor amet turducken brisket tri-tip shoulder andouille. Spare ribs bresaola pork chop turducken buffalo turkey sausage pancetta boudin short ribs. Bresaola shoulder doner, pork kielbasa shankle andouille meatball beef ribs pork belly t-bone filet mignon strip steak tongue. Turducken beef ribs porchetta flank pancetta. Tail pork loin ball tip cupim sirloin, prosciutto leberkas porchetta beef ribs ham.</p>
+                <button id="startWorkflow" class="btn btn-small btn-fill">Start workflow</button>
+            </article>
+        </div>
+        <div id="viewDiv"></div>
+        <div id="widgetPanel">
+            <header>
+                <button id="widgetClose" class="icon-ui-close icon-ui-gray"><span>close</span></button>
+                <h2 class="font-size-0">Workflow</h2>
+            </header>
+            <article>The rain in spain falls mainly o the plain.</article>
+            <footer>
+                <button id="widgetConfirm" class="btn btn-small">OK</button>
+                <button id="widgetCancel" class="btn btn-small btn-clear">Cancel</button>
+            </footer>
+        </div>
+        <div id="Feature"></div>
+        <div id="Popup">
+                <header>
+                    <button id="popupClose" class="icon-ui-close icon-ui-gray"><span>close</span></button>
+                    <h2 class="font-size-0">Popup</h2>
+                </header>
+                <article>
+                    <ul>
+                        <li>Keep your eyes peeled</li>
+                        <li>Cry wolf</li>
+                        <li>Wake up call</li>
+                        <li>No ifs, ands, or buts</li>
+                    </ul>
+                </article>
+            </div>
+    </div>
+
+    <!-- Load Script -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://js.arcgis.com/4.6/"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="animations.js"></script>
+</body>
+</html>
